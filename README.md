@@ -1,10 +1,10 @@
 [web_website]: https://rangeengine.tech
-[file_localhostCommand]: localhost.bat
-[file_localhostNode]: locahost.js
-[file_header]: /templates/header.html
+[file_localhostCommand]: /run_localhost.bat
+[file_localhostNode]: /localhost.js
+[file_navbar]: /templates/navbar.html
 [file_footer]: /templates/footer.html
-[file_about]: /templates/footer.html
-[file_about_host]: /footer.html
+[file_about]: /templates/about.html
+[file_about_host]: /about.html
 [dir_templates]: /templates
 
 ![](GitHub_Readme.png)
@@ -23,5 +23,5 @@ Official [Range Engine][web_website] Website.
 * _**Do not**_ edit the webpages in the root repository directory.
   * These webpages are automatically compiled by the [localhost][file_localhostNode] and are used for _**hosting only**_.
 * [/templates/][dir_templates] is a component folder, filled with individual webpages.
-* Any changes to [/templates/header][file_header] or [/templates/footer][file_footer] webpages will be injected into the other _**hosting only**_ webpages.
-* Any other componenet webpage files in [/templates][dir_templates] will likewise be compiled, but only for their own same filename, webpage. For example, [/templates/about][file_about] will be compiled into [/about][file_about_host], along with [/templates/header][file_header] and [/templates/footer][file_footer].
+* Any changes to [/templates/navbar][file_navbar] or [/templates/footer][file_footer] webpages will be injected into the other _**hosting only**_ webpages.
+* Any other componenet webpage files in [/templates][dir_templates] will likewise be compiled, but only for their own same filename, webpage. For example, [/templates/about][file_about] will be compiled into [/about][file_about_host], along with [/templates/navbar][file_navbar] and [/templates/footer][file_footer].
