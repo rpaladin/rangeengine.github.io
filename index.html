@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
@@ -10,24 +10,14 @@
     <meta property="og:description" content="Range Engine Is a Light And Powerful Game Engine And 3D Software"/>
     <meta property="og:site_name" content="Range Engine"/>
     <meta property="og:image" content="https://rangeengine.tech//img/RanGEs.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/rangecss.css"/>
+    <link href="/css/fonts/font_faces.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles/rangecss.css"/>
     <link rel="shortcut icon" href="/img/favicon.png" type="x-png"/>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="/js/responsivenav.js" defer></script>
-    <script>
-      $(document).on('scroll', function(){
-        if ( $(window).scrollTop() > 200) {
-          $('.header').addClass('activeh');
-        } else {
-          $('.header').removeClass('activeh');
-        }
-      });
-    </script>
+    <script src="/js/jquery-1.9.1.js"></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo"/></a></h1>
+      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo" /></a></h1>
       <a class="togglebutton">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -35,12 +25,11 @@
       </a>
       <nav class="headerlinks">
         <ul class="heaul">
-          <li class="headerlis"><a class="healinks" href="/">Home</a></li>
-          <li class="headerlis"><a class="healinks" href="downloadpage">Download</a></li>
-          <li class="headerlis"><a class="healinks" href="changelog">Changelog</a></li>
-          <li class="headerlis"><a class="healinks" href="store">Store</a></li>
+          <li class="headerlis"><a class="healinks" href="/download">Download</a></li>
+          <li class="headerlis"><a class="healinks" href="/changelog">Changelog</a></li>
+          <li class="headerlis"><a class="healinks" href="/about">Learn More</a></li>
           <li class="headerlis"><a class="healinks" href="/RangeDoc_Build/html">API</a></li>
-          <li class="headerlis"><a class="healinks" href="aboutus">Learn More</a></li>
+          <li class="headerlis"><a class="healinks" href="/store">Store&nbsp;<sup>(soon)</sup></a></li>
           <li class="headerlis"><a class="suppus" target=”_blank” href="https://patreon.com/user?u=62478788">Support</a></li>
         </ul>
       </nav>
@@ -48,14 +37,14 @@
     <section class="indexsec">
       <div class="apresentacao">
         <div class="sobreoprojeto">
-          <h2 class="titsec">Experience<br>Range Engine<p class="animbar">│</p></h2>
-          <hr>
+          <h2 class="titsec">Experience<br />Range Engine<p class="animbar">│</p></h2>
+          <hr />
           <p class="whatsxbge"><strong>Range Engine</strong> Is a Light And Powerful Game Engine And 3D Software</p>
         </div>
         <div class="downnabout">
           <ul>
-            <li class="downabout"><a class="downnow" href="downloadpage">Download Now</a></li>
-            <li class="downabout"><a class="knowmore" href="aboutus">Learn More</a></li>
+            <li class="downabout"><a class="downnow" href="/download">Download Now</a></li>
+            <li class="downabout"><a class="knowmore" href="/about">Learn More</a></li>
           </ul>
         </div>
       </div>
@@ -63,32 +52,32 @@
     <div class="learnmorearticle">
       <h3>What's Range Engine?</h3>
       <p class="whatsxbge">Range Engine Is a Light And Powerful Game Engine And 3D Software, Where You Can
-      <br>Make Your Models, Materials, And Publish Your Game.</p>
+      <br />Make Your Models, Materials, And Publish Your Game.</p>
     </div>
     <div class="rangverarticle">
       <div class="lmarticle">
-        <img class="rangver" src="/img/RanGEs.png" alt="RanGE Logo"/>
-        <a href="store" class="knowmore"><strong>Try Range Engine Store<p class="whatsxbge" style="display: inline;">(Soon)</p></strong></a>
+        <img class="rangver" src="/img/RanGEs.png" alt="RanGE Logo" />
+        <a href="/store" class="knowmore"><strong>In Progress - Range Engine Store&nbsp;<sup>(soon)</strong></a>
       </div>
     </div>
     <article>
       <div class="artigos">
         <div class="aboutxbge">
-          <img class="funcs" src="/img/modeling.PNG" alt="Modeling Natively"/>
+          <img class="funcs" src="/img/modeling.png" alt="Modeling Natively" />
           <div class="articledesc">
             <h3>Make Your Own Models Natively</h3>
             <p class="whatsxbge">You Can <b>Make The All Assets</b> You Need To Your Project
-            <br><b>Without Leaving Range Engine.</b></p>
+            <br /><b>Without Leaving Range Engine.</b></p>
           </div>
         </div>
       </div>
       <div class="artigos">
         <div class="aboutxbge">
-          <img class="funcs" src="/img/codelanguages.png" alt="Coding"/>
+          <img class="funcs" src="/img/codelanguages.png" alt="Coding" />
           <div class="articledesc">
             <h3>Code With Python Or Visual Language</h3>
             <p class="whatsxbge">Make Scripts With <b>Python 3.10</b> or <b>Visual Language</b>,
-            <br> Or Both Together. <i>(Bricky Nodes Coming Soon)</i></p>
+            <br /> Or Both Together. <i>(Bricky Nodes Coming Soon)</i></p>
           </div>
         </div>
       </div>
@@ -96,21 +85,21 @@
       <article style="padding-top:0;">
       <div class="artigos">
         <div class="aboutxbge">
-          <img class="funcs" src="/img/materials.PNG" alt="Make Materials"/>
+          <img class="funcs" src="/img/materials.png" alt="Make Materials" />
           <div class="articledesc">
             <h3>Make Your Materials</h3>
             <p class="whatsxbge">In Range Engine You Can Use <b>Basic Materials</b>
-            <br> Or <b>Nodes</b> To Make Your Materials.</p>
+            <br /> Or <b>Nodes</b> To Make Your Materials.</p>
           </div>
         </div>
       </div>
       <div class="artigos">
         <div class="aboutxbge">
-          <img class="funcs" src="/img/publishgame.png" alt="Publish Your Game"/>
+          <img class="funcs" src="/img/publishgame.png" alt="Publish Your Game" />
           <div class="articledesc">
             <h3>Publish Your Game</h3>
             <p class="whatsxbge">You Can Export And Publish Your Game <b>For Free
-            <br>With no license problems!</b></p>
+            <br />With no license problems!</b></p>
           </div>
         </div>
       </div>
@@ -122,7 +111,7 @@
       </div>
       <div>
         <ul>
-          <li class="downabout"><a class="knowmore" href="aboutus">Learn More</a></li>
+          <li class="downabout"><a class="knowmore" href="/about">Learn More</a></li>
         </ul>
       </div>
     </div>
@@ -145,10 +134,37 @@
             <li><a class="ftlink" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes">Wiki</a></li>
             <li><a class="ftlink" target=”_blank” href="https://patreon.com/user?u=62478788">Patreon</a></li>
             <li><a class="ftlink" target=”_blank” href="https://discord.gg/PV6bAvUFq3">Discord</a></li>
-            <li><a class="ftlink" target=”_blank” href="https://youtube.com/channel/UCWLwYxekuvOVaMsquS3OgPg">YouTube</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://youtube.com/@rangeengine">YouTube</a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+  if (location.pathname !== "/") {    
+    $(document).on('scroll', function() {
+      if ($(window).scrollTop() > 80) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  } else {
+    $(document).on('scroll', function(){
+      if ( $(window).scrollTop() > 200) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  }
+  var toggleButton = document.getElementsByClassName('togglebutton')[0];
+  var navbarLinks = document.getElementsByClassName('headerlinks')[0];
+  var toggleButtoon = document.getElementsByClassName('header')[0];
+  toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    $('.header').addClass('activeh');
+  });
+  </script>
 </html>

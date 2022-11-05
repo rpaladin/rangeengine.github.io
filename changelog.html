@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
@@ -10,16 +10,14 @@
     <meta property="og:description" content="Range Engine Is a Light And Powerful Game Engine And 3D Software"/>
     <meta property="og:site_name" content="Range Engine"/>
     <meta property="og:image" content="https://rangeengine.tech//img/RanGEs.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/rangecss.css"/>
+    <link href="/css/fonts/font_faces.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles/rangecss.css"/>
     <link rel="shortcut icon" href="/img/favicon.png" type="x-png"/>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="/js/responsivenav.js" defer></script>
-    <script src="/js/headercolor.js"></script>
+    <script src="/js/jquery-1.9.1.js"></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo"/></a></h1>
+      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo" /></a></h1>
       <a class="togglebutton">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,12 +25,11 @@
       </a>
       <nav class="headerlinks">
         <ul class="heaul">
-          <li class="headerlis"><a class="healinks" href="/">Home</a></li>
-          <li class="headerlis"><a class="healinks" href="downloadpage">Download</a></li>
-          <li class="headerlis"><a class="healinks" href="changelog">Changelog</a></li>
-          <li class="headerlis"><a class="healinks" href="store">Store</a></li>
+          <li class="headerlis"><a class="healinks" href="/download">Download</a></li>
+          <li class="headerlis"><a class="healinks" href="/changelog">Changelog</a></li>
+          <li class="headerlis"><a class="healinks" href="/about">Learn More</a></li>
           <li class="headerlis"><a class="healinks" href="/RangeDoc_Build/html">API</a></li>
-          <li class="headerlis"><a class="healinks" href="aboutus">Learn More</a></li>
+          <li class="headerlis"><a class="healinks" href="/store">Store&nbsp;<sup>(soon)</sup></a></li>
           <li class="headerlis"><a class="suppus" target=”_blank” href="https://patreon.com/user?u=62478788">Support</a></li>
         </ul>
       </nav>
@@ -40,9 +37,9 @@
     <section class="downsec">
       <div class="apresentacao">
         <div class="sobreoprojeto">
-          <hr>
+          <hr />
           <h2 class="titsece">Changelog</h2>
-          <hr>
+          <hr />
         </div>
       </div>
     </section>
@@ -50,74 +47,75 @@
       <div class="chglogmenu">
         <ul class="chgulmenu">
           <h3 style="padding:12px;">Range Engine Releases:</h3>
-          <li class="chgmli"><a href="changelog10">RanGE 1.0</a></li>
-          <li class="chgmli" style="border-color: rgba(145, 30, 30, 0.582);"><a>RanGE 1.2</a></li>
+          <li class="chgmli"><a href="/changelog10">RanGE 1.0</a></li>
+          <li id="rangeSplash" class="chgmli" style="border-color: rgba(145, 30, 30, 0.582);"><a>RanGE 1.2</a></li>
         </ul>
       </div>
       <div class="articlechanges">
         <div class="changelogdiv">
           <div class="artigoschanges">
-            <h3 class="changestitle">RanGE 1.2</h3>
+            <h3 class="changestitle"><a href="#rangeSplash">RanGE 1.2</a></h3>
             <p class="whatsxbge"><i>Principal Changes</i></p>
-            <hr>
-            <br>
-            <img class="funcssplash" src="https://camo.githubusercontent.com/c145a55fddf38abf8525c6b766e04f9453c50b3a8a9e861486a18b798772cd57/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333934343038353132393539323836322f756e6b6e6f776e2e706e67" alt="Splash">
+            <hr />
+            <br />
+            <img class="funcssplash" src="/img/changelog/1.2/splash.png" alt="Splash" />
             <a href="#" class="togglechalog">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </a>
           </div>
+          <span id="pythonUpgrade"></span>
           <ul class="artigoschanges">
-            <li class="changestitle">Python 3.10</li>
-            <hr>
+            <li class="changestitle"><a href="#pythonUpgrade">Python 3.10</a></li>
+            <hr />
             <p>RanGE 1.2 has the latest stable version of python with all new features and improvements.
-            <br><strong>Added Postponed annotations support.</strong></p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/81b1fd1918b86ada404c7cc55457b6d72fd2d834aba5e48e860c6c05052b0bff/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333934343835333435303539363432332f756e6b6e6f776e2e706e67" alt="Python 3.10">
-            <br>
-            <br>
-            <li class="changestitle">GameEngine DeltaTime</li>
-            <hr>
+            <br /><strong>Added Postponed annotations support.</strong></p>
+            <img class="funcsch" src="/img/changelog/1.2/pythonUpgrade.png" alt="Python 3.10" />
+            <br id="deltaTime" />
+            <br />
+            <li class="changestitle"><a href="#deltaTime">GameEngine DeltaTime</a></li>
+            <hr />
             <p>You can now apply framerate independence.
-            <br><strong>We recommend starting using this in your games from now on.</strong></p>
+            <br /><strong>We recommend starting using this in your games from now on.</strong></p>
             <p class="whatsxbge" style="color: rgb(194, 36, 36);"><strong>- Warning: DeltaTime was also applied to logic bricks in motionActuator. this will change your speed to the time scale.
-            <br>- So it's normal when migrating your project the character to be very slow.</strong></p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/8c6839c1210e5c4514578977bc4bbbefdd1dfa2742be2a09feaba9fbdb124e95/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333935303530383533343230363535342f44656c746154696d6556332e676966" alt="DeltaTime">
-            <br>
-            <br>
-            <li class="changestitle">Range Armor</li>
-            <hr>
+            <br />- So it's normal when migrating your project the character to be very slow.</strong></p>
+            <img class="funcsch" src="/img/changelog/1.2/deltaTIme.gif" alt="DeltaTime" />
+            <br id="rangeArmor" />
+            <br />
+            <li class="changestitle"><a href="#rangeArmor">Range Armor</a></li>
+            <hr />
             <p>Finally a new exporter integrated into the engine.
-            <br>You can export your game to several different platforms at once (Windows x64 and Linux).</p>
+            <br />You can export your game to several different platforms at once (Windows x64 and Linux).</p>
             <p class="whatsxbge"><i>RangeArmor is a fork from the BGArmor project.</i></p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/30b3d162f3cfdb84b59835e725b85e738445dc8edf3c16525ed3b2a23a9cdf53/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333935323133333037363232363034382f52616e676541726d6f722e676966" alt="Range Armor">
-            <br>
-            <br>
-            <li class="changestitle">Enable/Disable Python Component Execution in interface</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.2/rangeArmor.gif" alt="Range Armor" />
+            <br id="toggleComponents" />
+            <br />
+            <li class="changestitle"><a href="#toggleComponents">Enable/Disable Python Component Execution in interface</a></li>
+            <hr />
             <p>Extremely useful for debug your game.</p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/b4a9e36bbaaea2f52bf15272ceb1982f85f5d58fe09e1c81416254e9b6d2cda6/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333935313530323530303336383431342f507974686f6e436f6d706f6e656e7445786563427574746f6e2e676966" alt="On/Off Components">
-            <br>
-            <br>
-            <li class="changestitle">New MouseLook Method</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.2/toggleComponents.gif" alt="On/Off Components" />
+            <br id="mouselookMethod" />
+            <br />
+            <li class="changestitle"><a href="#mouselookMethod">New MouseLook Method</a></li>
+            <hr />
             <p>Now there is a new method to create a mouselook, using mouseDelta, one of the most current ways to make a mouselook. only 3 lines are needed to create!</p>
             <p class="whatsxbge">Without the famous sliding bug when creating a mouseLook or something like that.</p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/cde89d2f61155b636886272b45556957c8cef82a053c47e40aa7d495ab32148a/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3734353736343437353038303134373034342f313033333935363734303535363932323935302f4e65774d6f7573654c6f6f6b2e676966" alt="MouseLook">
-            <br>
-            <br>
-            <li class="changestitle">SetPosition in motionActuator</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.2/mouselookMethod.gif" alt="MouseLook" />
+            <br id="setPosition" />
+            <br />
+            <li class="changestitle"><a href="#setPosition">SetPosition in motionActuator</a></li>
+            <hr />
             <p>Useful for placing objects or the character in specific places.</p>
-            <img class="funcsch" src="https://camo.githubusercontent.com/0fa3bbadb88f328e9540824c4dc06b68f68f34d041a9307da395d41354ffe35c/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f313030303538313035313139313636383738372f313033323039333532363538383134393831302f4749465f31382d31302d323032325f32312d34382d33352e676966" alt="Set Position">
-            <img class="funcsch" src="https://camo.githubusercontent.com/fc7460bbd701b41f30170c7d6a9fcb2d0120ea97ee82b28936e92081b939e58b/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3438313033363831343533393239323637342f313033323131373735393930393331383635362f4749465f31382d31302d323032325f32332d32342d33312e676966" alt="Set Position">
-            <br>
-            <br>
+            <img class="funcsch" src="/img/changelog/1.2/setPosition_1.gif" alt="Set Position" />
+            <img class="funcsch" src="/img/changelog/1.2/setPosition_2.gif" alt="Set Position" />
+            <br />
+            <br />
           </ul>
           <ul class="artigoschanges">
-            <p><strong>Complete Changelog on GitHub!</strong><br>
+            <p><strong>Complete Changelog on GitHub!</strong><br />
             Bug Fixes, Use Methods and Misc</p>
-            <br>
+            <br />
             <li class="downabout"><a class="downnow" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes-version-1.2">RanGE GitHub</a></li>
           </ul>
         </div>
@@ -142,10 +140,37 @@
             <li><a class="ftlink" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes">Wiki</a></li>
             <li><a class="ftlink" target=”_blank” href="https://patreon.com/user?u=62478788">Patreon</a></li>
             <li><a class="ftlink" target=”_blank” href="https://discord.gg/PV6bAvUFq3">Discord</a></li>
-            <li><a class="ftlink" target=”_blank” href="https://youtube.com/channel/UCWLwYxekuvOVaMsquS3OgPg">YouTube</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://youtube.com/@rangeengine">YouTube</a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+  if (location.pathname !== "/") {    
+    $(document).on('scroll', function() {
+      if ($(window).scrollTop() > 80) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  } else {
+    $(document).on('scroll', function(){
+      if ( $(window).scrollTop() > 200) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  }
+  var toggleButton = document.getElementsByClassName('togglebutton')[0];
+  var navbarLinks = document.getElementsByClassName('headerlinks')[0];
+  var toggleButtoon = document.getElementsByClassName('header')[0];
+  toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    $('.header').addClass('activeh');
+  });
+  </script>
 </html>

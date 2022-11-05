@@ -1,11 +1,27 @@
+[web_website]: https://rangeengine.tech
+[file_localhostCommand]: localhost.bat
+[file_localhostNode]: locahost.js
+[file_header]: /templates/header.html
+[file_footer]: /templates/footer.html
+[file_about]: /templates/footer.html
+[file_about_host]: /footer.html
+[dir_templates]: /templates
+
 ![](GitHub_Readme.png)
 
-# Range Engine Site
-Official Range Engine Website
+## Range Engine Site
+Official [Range Engine][web_website] Website.
 
-# Instructions
-* Open `Run_Localhost.cmd` in a text-editor and set both `PATH` & `PY_SCRIPT` variables to fit your local structure.
-* Run `Run_Localhost.cmd` by double-clicking it.
-* Go to your browser and enter `localhost` as your URL address.
-  * If this doesn't work try `localhost:80` instead - `80` stands for port 80, which is the default port on most computers.
-    * If the port is already being used by some other service, open `Run_Localhost.py` and modify the `PORT` variable to state a different port.
+## How To Test Locally
+* Download and extract the files in this repository.
+* Simply run [localhost.bat][file_localhostCommand].
+* Open a browser and enter _**"localhost"**_ as your URL address.
+  * If this doesn't work, try _**localhost:80**__ instead. The _**80**_ stands for port 80, which is the default port for HTTP traffic on most computers.
+    * If the port is already in use by another other service, change the port value by opening [localhost.js][file_localhostNode] and setting the _**PORT**_ variable  to a different port value.
+
+## How To Develop
+* _**Do not**_ edit the webpages in the root repository directory.
+  * These webpages are automatically compiled by the [localhost][file_localhostNode] and are used for _**hosting only**_.
+* [/templates/][dir_templates] is a component folder, filled with individual webpages.
+* Any changes to [/templates/header][file_header] or [/templates/footer][file_footer] webpages will be injected into the other _**hosting only**_ webpages.
+* Any other componenet webpage files in [/templates][dir_templates] will likewise be compiled, but only for their own same filename, webpage. For example, [/templates/about][file_about] will be compiled into [/about][file_about_host], along with [/templates/header][file_header] and [/templates/footer][file_footer].

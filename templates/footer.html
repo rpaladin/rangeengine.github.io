@@ -1,0 +1,53 @@
+    <footer>
+      <div class="footerobjs">
+        <div class="spanrange">
+          <span id="no_underline" class="ftlink">&copy; <span id="copyright-year"></span> - Range Engine</span>
+          <script>
+            $(document).ready(function() {
+              document.getElementById('copyright-year').appendChild(
+                document.createTextNode(
+                  new Date().getFullYear()
+                )
+              );
+            });
+          </script>
+        </div>
+        <div class="ftlinks">
+          <ul>
+            <li><a class="ftlink" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes">Wiki</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://patreon.com/user?u=62478788">Patreon</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://discord.gg/PV6bAvUFq3">Discord</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://youtube.com/@rangeengine">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+  if (location.pathname !== "/") {    
+    $(document).on('scroll', function() {
+      if ($(window).scrollTop() > 80) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  } else {
+    $(document).on('scroll', function(){
+      if ( $(window).scrollTop() > 200) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  }
+  var toggleButton = document.getElementsByClassName('togglebutton')[0];
+  var navbarLinks = document.getElementsByClassName('headerlinks')[0];
+  var toggleButtoon = document.getElementsByClassName('header')[0];
+  toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    $('.header').addClass('activeh');
+  });
+  </script>
+</html>

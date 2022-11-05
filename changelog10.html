@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
@@ -10,16 +10,14 @@
     <meta property="og:description" content="Range Engine Is a Light And Powerful Game Engine And 3D Software"/>
     <meta property="og:site_name" content="Range Engine"/>
     <meta property="og:image" content="https://rangeengine.tech//img/RanGEs.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/rangecss.css"/>
+    <link href="/css/fonts/font_faces.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles/rangecss.css"/>
     <link rel="shortcut icon" href="/img/favicon.png" type="x-png"/>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="/js/responsivenav.js" defer></script>
-    <script src="/js/headercolor.js"></script>
+    <script src="/js/jquery-1.9.1.js"></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo"/></a></h1>
+      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo" /></a></h1>
       <a class="togglebutton">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,12 +25,11 @@
       </a>
       <nav class="headerlinks">
         <ul class="heaul">
-          <li class="headerlis"><a class="healinks" href="/">Home</a></li>
-          <li class="headerlis"><a class="healinks" href="downloadpage">Download</a></li>
-          <li class="headerlis"><a class="healinks" href="changelog">Changelog</a></li>
-          <li class="headerlis"><a class="healinks" href="store">Store</a></li>
+          <li class="headerlis"><a class="healinks" href="/download">Download</a></li>
+          <li class="headerlis"><a class="healinks" href="/changelog">Changelog</a></li>
+          <li class="headerlis"><a class="healinks" href="/about">Learn More</a></li>
           <li class="headerlis"><a class="healinks" href="/RangeDoc_Build/html">API</a></li>
-          <li class="headerlis"><a class="healinks" href="aboutus">Learn More</a></li>
+          <li class="headerlis"><a class="healinks" href="/store">Store&nbsp;<sup>(soon)</sup></a></li>
           <li class="headerlis"><a class="suppus" target=”_blank” href="https://patreon.com/user?u=62478788">Support</a></li>
         </ul>
       </nav>
@@ -40,9 +37,9 @@
     <section class="downsec">
       <div class="apresentacao">
         <div class="sobreoprojeto">
-          <hr>
+          <hr />
           <h2 class="titsece">Changelog</h2>
-          <hr>
+          <hr />
         </div>
       </div>
     </section>
@@ -51,102 +48,103 @@
         <ul class="chgulmenu">
           <h3 style="padding:12px;">Range Engine Releases:</h3>
           <li class="chgmli" style="border-color: rgba(145, 30, 30, 0.582);"><a>RanGE 1.0</a></li>
-          <li class="chgmli"><a href="changelog">RanGE 1.2</a></li>
+          <li id="rangeSplash" class="chgmli"><a href="/changelog">RanGE 1.2</a></li>
         </ul>
       </div>
       <div class="articlechanges">
         <div class="changelogdiv">
           <div class="artigoschanges">
-            <h3 class="changestitle">RanGE 1.0</h3>
+            <h3 class="changestitle"><a href="#rangeSplash">RanGE 1.0</a></h3>
             <p class="whatsxbge"><i>Principal Changes</i></p>
-            <hr>
-            <br>
-            <img class="funcssplash" src="/img/changelog/1.0/splash.png" alt="Splash">
+            <hr />
+            <br />
+            <img class="funcssplash" src="/img/changelog/1.0/splash.png" alt="Splash" />
             <a href="#" class="togglechalog">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </a>
           </div>
+          <span id="areaLights"></span>
           <ul class="artigoschanges">
-            <li class="changestitle">Area Light</li>
-            <hr>
+            <li class="changestitle"><a href="#areaLights">Area Light</a></li>
+            <hr />
             <p>New Lamp Illumination Type.</p>
-            <img class="funcsch" src="/img/changelog/1.0/arealight.png" alt="Area Light">
-            <br>
-            <br>
-            <li class="changestitle">Responsive Profiler</li>
-            <hr>
+            <img id="responsiveProfiler" class="funcsch" src="/img/changelog/1.0/arealight.png" alt="Area Light" />
+            <br />
+            <br />
+            <li class="changestitle"><a href="#responsiveProfiler">Responsive Profiler</a></li>
+            <hr />
             <p>Best Engine Depuration.</p>
-            <img class="funcsch" src="/img/changelog/1.0/profiler.gif" alt="Profiler">
-            <br>
-            <br>
-            <li class="changestitle">Layer Weight</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/profiler.gif" alt="Profiler" />
+            <br id="layerWeight" />
+            <br />
+            <li class="changestitle"><a href="#layerWeight">Layer Weight</a></li>
+            <hr />
             <p>Now You Can Control The Layer Weight Of Each Layer, Allowing For More Complex Animations.</p>
-            <img class="funcsch" src="/img/changelog/1.0/layerweight.gif" alt="Layer Weight">
-            <br>
-            <br>
-            <li class="changestitle">Character Physics Update</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/layerweight.gif" alt="Layer Weight" />
+            <br id="characterPhysics" />
+            <br />
+            <li class="changestitle"><a href="#characterPhysics">Character Physics Update</a></li>
+            <hr />
             <p>Character Physics Now Has Smooth Movement And Jump Direction.</p>
             <img class="funcsch" src="/img/changelog/1.0/jumpdir.gif" alt="Jump Direction">
-            <img class="funcsch" src="/img/changelog/1.0/smoothmov.gif" alt="Smooth Movement">
-            <br>
-            <br>
-            <li class="changestitle">Text Resolution</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/smoothmov.gif" alt="Smooth Movement" />
+            <br id="textResolution" />
+            <br />
+            <li class="changestitle"><a href="#textResolution">Text Resolution</a></li>
+            <hr />
             <p>Change The In-Game Text Resolution (High Resolution Can Slow Performance)</p>
-            <img class="funcsch" src="/img/changelog/1.0/textres.gif" alt="Text Resolution">
-            <br>
-            <br>
-            <li class="changestitle">Physics Culling Velocity</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/textres.gif" alt="Text Resolution" />
+            <br id="velocityCulling" />
+            <br />
+            <li class="changestitle"><a href="#velocityCulling">Physics Culling Velocity</a></li>
+            <hr />
             <p>Objects With Physics Culling Only Stop Physics When They Are Motionless.</p>
-            <img class="funcsch" src="/img/changelog/1.0/pysxculling.png" alt="Physics Culling">
-            <br>
-            <br>
-            <li class="changestitle">Object Physics Friction</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/pysxculling.png" alt="Physics Culling" />
+            <br id="frictionApi" />
+            <br />
+            <li class="changestitle"><a href="#frictionApi">Object Physics Friction</a></li>
+            <hr />
             <p>New Function On Object Physics.</p>
-            <img class="funcsch" src="/img/changelog/1.0/objfric.gif" alt="Object Friction">
-            <br>
-            <br>
-            <li class="changestitle">worldScalingObject Now Influence To obstacleSimulation</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/objfric.gif" alt="Object Friction" />
+            <br id="objectSimulationScaling" />
+            <br />
+            <li class="changestitle"><a href="#objectSimulationScaling">worldScalingObject Now Influence To obstacleSimulation</a></li>
+            <hr />
             <p>Now Obstacle Simulation Size Influences With Object Scaling, Great For Objects Instantiated With Different Sizes.</p>
-            <img class="funcsch" src="/img/changelog/1.0/wssim.gif" alt="Obstacle Simulation">
-            <br>
-            <br>
-            <li class="changestitle">Reordering Components</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/wssim.gif" alt="Obstacle Simulation" />
+            <br id="arrangeComponents" />
+            <br />
+            <li class="changestitle"><a href="#arrangeComponents">Reordering Components</a></li>
+            <hr />
             <p>You Can Arrange The Order Of Components In The Object.</p>
-            <img class="funcsch" src="/img/changelog/1.0/reordercomp.gif" alt="Reordering Components">
-            <br>
-            <br>
-            <li class="changestitle">Components Header</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/reordercomp.gif" alt="Reordering Components" />
+            <br id="componentsHeader" />
+            <br />
+            <li class="changestitle"><a href="#componentsHeader">Components Header</a></li>
+            <hr />
             <p>You Can Organize Your Components With Components Header.</p>
-            <img class="funcsch" src="/img/changelog/1.0/compheader.png" alt="Components Header">
-            <br>
-            <br>
-            <li class="changestitle">New Mouse Events (Logic Bricks)</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/compheader.png" alt="Components Header" />
+            <br id="mouseInputs" />
+            <br />
+            <li class="changestitle"><a href="#mouseInputs">New Mouse Events (Logic Bricks)</a></li>
+            <hr />
             <p>Mouse Side Buttons Are Now Available On Logic Bricks.</p>
-            <img class="funcsch" src="/img/changelog/1.0/mousevents.PNG" alt="Mouse Events">
-            <br>
-            <br>
-            <li class="changestitle">Repeat For In Delay Sensor</li>
-            <hr>
+            <img class="funcsch" src="/img/changelog/1.0/mousevents.png" alt="Mouse Events" />
+            <br id="repeatFor" />
+            <br />
+            <li class="changestitle"><a href="#repeatFor">Repeat For In Delay Sensor</a></li>
+            <hr />
             <p>Number Of Times The Sensor Will Repeat Before Stopping.</p>
-            <img class="funcsch" src="/img/changelog/1.0/repeatfor.PNG" alt="Repeat For">
-            <br>
-            <br>
+            <img class="funcsch" src="/img/changelog/1.0/repeatfor.png" alt="Repeat For" />
+            <br />
+            <br />
           </ul>
           <ul class="artigoschanges">
-            <p><strong>API, Bug Fixes And Much More!</strong><br>
+            <p><strong>API, Bug Fixes And Much More!</strong><br />
             On RanGE GitHub Changelog</p>
-            <br>
+            <br />
             <li class="downabout"><a class="downnow" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes-version-1.0">RanGE GitHub</a></li>
           </ul>
         </div>
@@ -171,10 +169,37 @@
             <li><a class="ftlink" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes">Wiki</a></li>
             <li><a class="ftlink" target=”_blank” href="https://patreon.com/user?u=62478788">Patreon</a></li>
             <li><a class="ftlink" target=”_blank” href="https://discord.gg/PV6bAvUFq3">Discord</a></li>
-            <li><a class="ftlink" target=”_blank” href="https://youtube.com/channel/UCWLwYxekuvOVaMsquS3OgPg">YouTube</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://youtube.com/@rangeengine">YouTube</a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+  if (location.pathname !== "/") {    
+    $(document).on('scroll', function() {
+      if ($(window).scrollTop() > 80) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  } else {
+    $(document).on('scroll', function(){
+      if ( $(window).scrollTop() > 200) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  }
+  var toggleButton = document.getElementsByClassName('togglebutton')[0];
+  var navbarLinks = document.getElementsByClassName('headerlinks')[0];
+  var toggleButtoon = document.getElementsByClassName('header')[0];
+  toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    $('.header').addClass('activeh');
+  });
+  </script>
 </html>

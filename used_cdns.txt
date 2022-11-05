@@ -1,0 +1,6 @@
+[Google Fonts]
+• https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap
+• https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mDbRS.woff2
+• https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2
+[JQuery]
+• https://code.jquery.com/jquery-1.9.1.js

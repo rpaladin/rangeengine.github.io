@@ -1,25 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Range Engine Store</title>
+    <title>Range Engine</title>
     <meta name="description" content="Range Engine Is a Light And Powerful Game Engine And 3D Software"/>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Range Engine"/>
     <meta property="og:description" content="Range Engine Is a Light And Powerful Game Engine And 3D Software"/>
     <meta property="og:site_name" content="Range Engine"/>
     <meta property="og:image" content="https://rangeengine.tech//img/RanGEs.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/rangecss.css"/>
+    <link href="/css/fonts/font_faces.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles/rangecss.css"/>
     <link rel="shortcut icon" href="/img/favicon.png" type="x-png"/>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="/js/responsivenav.js" defer></script>
-    <script src="/js/headercolor.js"></script>
+    <script src="/js/jquery-1.9.1.js"></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo"/></a></h1>
+      <h1 class="title"><a href="/"><img class="logo" src="/img/RGE.png" alt="RanGELogo" /></a></h1>
       <a class="togglebutton">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,12 +25,11 @@
       </a>
       <nav class="headerlinks">
         <ul class="heaul">
-          <li class="headerlis"><a class="healinks" href="/">Home</a></li>
-          <li class="headerlis"><a class="healinks" href="downloadpage">Download</a></li>
-          <li class="headerlis"><a class="healinks" href="changelog">Changelog</a></li>
-          <li class="headerlis"><a class="healinks" href="store">Store</a></li>
+          <li class="headerlis"><a class="healinks" href="/download">Download</a></li>
+          <li class="headerlis"><a class="healinks" href="/changelog">Changelog</a></li>
+          <li class="headerlis"><a class="healinks" href="/about">Learn More</a></li>
           <li class="headerlis"><a class="healinks" href="/RangeDoc_Build/html">API</a></li>
-          <li class="headerlis"><a class="healinks" href="aboutus">Learn More</a></li>
+          <li class="headerlis"><a class="healinks" href="/store">Store&nbsp;<sup>(soon)</sup></a></li>
           <li class="headerlis"><a class="suppus" target=”_blank” href="https://patreon.com/user?u=62478788">Support</a></li>
         </ul>
       </nav>
@@ -40,9 +37,9 @@
     <section class="downsec">
       <div class="apresentacao">
         <div class="sobreoprojeto">
-          <hr>
-          <h2 class="titsece">Store (Soon)</h2>
-          <hr>
+          <hr />
+          <h2 class="titsece">Store&nbsp;<sup>(soon)</h2>
+          <hr />
         </div>
       </div>
     </section>
@@ -61,13 +58,13 @@
       <div class="articlechanges" style="text-align: center;">
         <div class="changelogdiv">
           <div class="artigoschanges">
-            <h3><img style="max-width: 40%;" src="/img/store/RanGEStoreFont.png" alt="Range Store"></h3>
-            <hr>
+            <h3><img style="max-width: 40%;" src="/img/store/RanGEStoreFont.png" alt="Range Store" /></h3>
+            <hr />
             <p style="font-size: 16px;"><i><strong>Welcome to Range Engine Store!</strong>
-            <br>In Range Engine Store You Can Find A Lot Of Content To Use On Your Game
-            <br>Ready To Use On Range Engine, Made By Community and Official Devs
-            <br>Don't Forget to Read The Description Of The Products To Learn More About Copyright Terms Of Each Product</i></p>
-            <hr>
+            <br />In Range Engine Store You Can Find A Lot Of Content To Use On Your Game
+            <br />Ready To Use On Range Engine, Made By Community and Official Devs
+            <br />Don't Forget to Read The Description Of The Products To Learn More About Copyright Terms Of Each Product</i></p>
+            <hr />
           </div>
         </div>
       </div>
@@ -79,7 +76,7 @@
       </div>
       <div>
         <ul>
-          <li class="downabout"><a class="knowmore" href="aboutus">Learn More</a></li>
+          <li class="downabout"><a class="knowmore" href="/about">Learn More</a></li>
         </ul>
       </div>
     </div>
@@ -102,10 +99,37 @@
             <li><a class="ftlink" target=”_blank” href="https://github.com/rangeengine/Range-Engine-Wiki/wiki/Release-notes">Wiki</a></li>
             <li><a class="ftlink" target=”_blank” href="https://patreon.com/user?u=62478788">Patreon</a></li>
             <li><a class="ftlink" target=”_blank” href="https://discord.gg/PV6bAvUFq3">Discord</a></li>
-            <li><a class="ftlink" target=”_blank” href="https://youtube.com/channel/UCWLwYxekuvOVaMsquS3OgPg">YouTube</a></li>
+            <li><a class="ftlink" target=”_blank” href="https://youtube.com/@rangeengine">YouTube</a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+  if (location.pathname !== "/") {    
+    $(document).on('scroll', function() {
+      if ($(window).scrollTop() > 80) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  } else {
+    $(document).on('scroll', function(){
+      if ( $(window).scrollTop() > 200) {
+        $('.header').addClass('activeh');
+      } else {
+        $('.header').removeClass('activeh');
+      }
+    });
+  }
+  var toggleButton = document.getElementsByClassName('togglebutton')[0];
+  var navbarLinks = document.getElementsByClassName('headerlinks')[0];
+  var toggleButtoon = document.getElementsByClassName('header')[0];
+  toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+    $('.header').addClass('activeh');
+  });
+  </script>
 </html>
