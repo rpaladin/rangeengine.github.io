@@ -16,7 +16,7 @@ Official [Range Engine][web_website] Website.
 * Download and extract the files in this repository.
 * Simply run [localhost.bat][file_localhostCommand].
 * Open a browser and enter _**"localhost"**_ as your URL address.
-  * If this doesn't work, try _**localhost:80**__ instead. The _**80**_ stands for port 80, which is the default port for HTTP traffic on most computers.
+  * If this doesn't work, try _**localhost:80**_ instead. The _**80**_ stands for port 80, which is the default port for HTTP traffic on most computers.
     * If the port is already in use by another other service, change the port value by opening [localhost.js][file_localhostNode] and setting the _**PORT**_ variable  to a different port value.
 
 ## How To Develop
